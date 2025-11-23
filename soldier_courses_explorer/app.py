@@ -1,0 +1,1 @@
+user_input = input(" 1.Load CSV into DB \n 2.Search records by institution name \n 3.Search records by course name \n 4.Find most/least common course \n 5.Show course count per district \n 6.Free SQL query \n 7.Exit")
