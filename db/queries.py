@@ -18,6 +18,7 @@ def question_3(keyword):
     WHERE institution LIKE CONCAT('%', %s, '%')
     LIMIT 50;""", (keyword,))
     return cursor.fetchall()
+# print(question_3("הצלה בבריכות שחיה סוג 1"))
 
 def question_4_a():
     cursor.execute("""SELECT course, COUNT(*) AS num
@@ -50,7 +51,7 @@ def question_6(query_user):
     if "select" == query_user.split()[0]:
         cursor.execute(query_user)
     return cursor.fetchall()
-
-print(question_6("select * from courses"))
+#
+# print(question_6("select * from courses"))
 
 
